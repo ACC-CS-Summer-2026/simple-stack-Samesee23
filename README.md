@@ -33,13 +33,13 @@ The test suite is dynamic, so it adjusts to changes in `DEFAULT_SIZE` automatica
 Compile the project with a C++ compiler:
 
 ```bash
-g++ -o main main.cpp stack.cpp
+g++ -I ./ *.cpp
 ```
 
 Run the test suite:
 
 ```bash
-./main
+./a.out
 ```
 
 ## Notes

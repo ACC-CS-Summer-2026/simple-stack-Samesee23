@@ -1,6 +1,22 @@
+/* *************************************************
+*  Name: Michael Flores
+*  Assignment: 4 - Stack Class Implementation
+*  Purpose: Create a Stack class with push, pop, peek, and isEmpty methods, and test it in various states.
+************************************************* */
+
 #include "main.h"
 
 void testNormalState() {
+    /* *************************************************
+    This function tests the Stack class in a normal state, where
+    push and pop operations are performed within the stack's capacity.
+
+    @param na : na
+    @return na : na
+    @exception na : na
+    @note na
+    * ************************************************* */
+
     std::cout << "\n========== NORMAL STATE (Neither Overflow nor Underflow) ==========" << std::endl;
     Stack s;
     
@@ -36,6 +52,16 @@ void testNormalState() {
 }
 
 void testOverflowState() {
+    /* *************************************************
+    This function tests the Stack class in an overflow state, where 
+    push operations are attempted beyond the stack's capacity.
+
+    @param na : na
+    @return na : na
+    @exception na : na
+    @note na
+    * ************************************************* */
+
     std::cout << "\n========== OVERFLOW STATE ==========" << std::endl;
     Stack s;
     
@@ -66,6 +92,16 @@ void testOverflowState() {
 }
 
 void testUnderflowState() {
+    /* *************************************************
+    This function tests the Stack class in an underflow state, where 
+    pop and peek operations are attempted on an empty stack.
+
+    @param na : na
+    @return na : na
+    @exception na : na
+    @note na
+    * ************************************************* */
+
     std::cout << "\n========== UNDERFLOW STATE ==========" << std::endl;
     Stack s;
     
@@ -102,6 +138,17 @@ void testUnderflowState() {
 }
 
 int main() {
+     /* **********************************
+     * This function is the application driver. It uses
+     * and tests the functions of the Stack class in various 
+     * states: normal, overflow, and underflow.
+     *
+     * @param na : na
+     * @return (int) : application exit code
+     * @exception na : na
+     * @note na
+     * **********************************/
+
     std::cout << "========================================" << std::endl;
     std::cout << "     STACK COMPREHENSIVE TEST SUITE     " << std::endl;
     std::cout << "========================================" << std::endl;

@@ -39,7 +39,7 @@ void testOverflowState() {
     std::cout << "\n========== OVERFLOW STATE ==========" << std::endl;
     Stack s;
     
-    std::cout << "\nFilling stack to capacity (DEFAULT_SIZE = " << DEFAULT_SIZE << "):" << std::endl;
+    std::cout << "\nFilling stack to capacity of " << DEFAULT_SIZE << std::endl;
     for (int i = 0; i < DEFAULT_SIZE; i++) {
         s.push(i * 100);
         std::cout << "Pushed: " << (i * 100) << std::endl;
@@ -55,7 +55,7 @@ void testOverflowState() {
     s.push(9999);
     std::cout << "Attempted to push 9999 (should show overflow error)" << std::endl;
     
-    std::cout << "\nTesting peek() - should still return last valid element:" << std::endl;
+    std::cout << "\nTesting peek() - should still return:" << s.peek() << std::endl;
     std::cout << "peek(): " << s.peek() << std::endl;
     
     std::cout << "\nTesting pop() - removing one element:" << std::endl;
@@ -69,7 +69,7 @@ void testUnderflowState() {
     std::cout << "\n========== UNDERFLOW STATE ==========" << std::endl;
     Stack s;
     
-    std::cout << "\nTesting isEmpty() on new stack:" << std::endl;
+    std::cout << "\nTesting isEmpty() - should be true for new stack:" << std::endl;
     std::cout << "isEmpty(): " << (s.isEmpty() ? "true" : "false") << std::endl;
     
     std::cout << "\nAttempting peek() on empty stack (underflow):" << std::endl;

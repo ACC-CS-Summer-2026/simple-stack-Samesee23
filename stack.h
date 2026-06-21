@@ -8,6 +8,8 @@
 #define STACK_H
 
 #include <iostream>
+
+/// Define a default size for the stack
 const int DEFAULT_SIZE = 10;
 
 class Stack {

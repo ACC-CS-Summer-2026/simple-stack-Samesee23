@@ -1,5 +1,4 @@
 #include "stack.h"
-#include <iostream>
 
 Stack::Stack() : top(-1), capacity(::DEFAULT_SIZE) {
     data = new int[capacity];

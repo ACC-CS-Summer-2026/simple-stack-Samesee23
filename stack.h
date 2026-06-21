@@ -1,6 +1,7 @@
 #ifndef STACK_H
 #define STACK_H
 
+#include <iostream>
 const int DEFAULT_SIZE = 10;
 
 class Stack {
